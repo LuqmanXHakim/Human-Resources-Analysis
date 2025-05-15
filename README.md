@@ -6,11 +6,42 @@ Jaya Jaya Maju adalah perusahaan multinasional yang telah berdiri sejak tahun 20
 
 ### Permasalahan Bisnis
 
-Tuliskan seluruh permasalahan bisnis yang akan diselesaikan.
+Sebagai perusahaan edutech multinasional yang telah berdiri sejak tahun 2000 dan mempekerjakan lebih dari 1000 karyawan di seluruh Indonesia, Jaya Jaya Maju dihadapkan pada tantangan serius dalam manajemen sumber daya manusia. Salah satu isu yang mencuat adalah tingginya tingkat attrition karyawan, yang melebihi angka 10%.
+
+Fenomena ini tidak hanya mencerminkan potensi masalah dalam retensi karyawan, tetapi juga berdampak langsung pada kenaikan biaya operasional, khususnya dalam proses rekrutmen, pelatihan, dan adaptasi karyawan baru. Selain itu, attrition yang tinggi turut berkontribusi terhadap menurunnya efisiensi kerja dan penurunan kualitas layanan kepada pengguna.
+
+Untuk itu, perusahaan perlu segera mengidentifikasi pola-pola yang memicu attrition, memahami faktor utama yang mendorong karyawan keluar, serta merancang strategi berbasis data untuk meningkatkan tingkat retensi dan keberlanjutan organisasi secara keseluruhan.
 
 ### Cakupan Proyek
 
-Tuliskan cakupan proyek yang akan dikerjakan.
+1. Eksplorasi dan Pemahaman Data (Data Understanding)
+- Mengumpulkan data historis yang berkaitan dengan status karyawan (bertahan atau keluar), mencakup atribut seperti demografi, kinerja, tingkat kepuasan kerja, dan faktor lainnya.
+
+- Menganalisis struktur dan jenis data untuk memahami konteks dan skema informasi yang tersedia.
+
+2. Persiapan dan Pra-pemrosesan Data (Data Preparation)
+- Membersihkan dataset dari nilai kosong, data redundan, atau inkonsistensi yang dapat mengganggu proses analisis.
+
+- Melakukan transformasi data seperti encoding pada kolom kategori, normalisasi skala, serta pemilihan fitur penting yang berpengaruh terhadap prediksi attrition.
+
+- Menganalisis korelasi antar fitur untuk menemukan hubungan signifikan.
+
+3. Pembuatan Model Machine Learning
+- Membagi data menjadi data pelatihan dan data pengujian untuk memastikan evaluasi yang objektif.
+
+- Membangun beberapa model prediktif dengan target variabel attrition, dan menyetel hyperparameter masing-masing model.
+
+- Menggunakan pendekatan pembelajaran terawasi untuk mengidentifikasi pola-pola penting.
+
+4. Evaluasi Model
+- Mengukur performa model menggunakan data pengujian dengan metrik seperti akurasi, precision, recall, dan F1-score.
+
+- Membandingkan hasil dari beberapa model untuk memilih yang paling optimal.
+
+5. Deployment
+- Model terbaik yang dipilih untuk di-deploy adalah Random Forest karena performanya yang stabil dan kemampuannya menangani data non-linear.
+
+- Model ini akan diintegrasikan ke dalam sistem produksi sehingga dapat digunakan oleh pengguna untuk memprediksi kemungkinan karyawan keluar berdasarkan input data terbaru.
 
 ### Persiapan
 
