@@ -58,6 +58,25 @@ Tools yang telah digunakan:
 - Jupyter Notebook (untuk eksplorasi dan modelling)
 ```
 
+## Setup menggunakan Google colab 
+```
+!pip install -r requirements.txt
+```
+## Setup Environment - Anaconda
+```
+conda create --name main-ds python=3.11.9
+conda activate main-ds
+pip install -r requirements.txt
+```
+## Setup dengan pipenv (alternatif)
+```
+mkdir proyek_analisis_data
+cd proyek_analisis_data
+pipenv install --python 3.11.9
+pipenv shell
+pip install -r requirements.txt
+```
+
 ## Business Dashboard
 
 Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
