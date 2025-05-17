@@ -15,11 +15,13 @@ Untuk itu, perusahaan perlu segera mengidentifikasi pola-pola yang memicu attrit
 ### Cakupan Proyek
 
 1. Eksplorasi dan Pemahaman Data (Data Understanding)
+
 - Mengumpulkan data historis yang berkaitan dengan status karyawan (bertahan atau keluar), mencakup atribut seperti demografi, kinerja, tingkat kepuasan kerja, dan faktor lainnya.
 
 - Menganalisis struktur dan jenis data untuk memahami konteks dan skema informasi yang tersedia.
 
 2. Persiapan dan Pra-pemrosesan Data (Data Preparation)
+
 - Membersihkan dataset dari nilai kosong, data redundan, atau inkonsistensi yang dapat mengganggu proses analisis.
 
 - Melakukan transformasi data seperti encoding pada kolom kategori, normalisasi skala, serta pemilihan fitur penting yang berpengaruh terhadap prediksi attrition.
@@ -27,6 +29,7 @@ Untuk itu, perusahaan perlu segera mengidentifikasi pola-pola yang memicu attrit
 - Menganalisis korelasi antar fitur untuk menemukan hubungan signifikan.
 
 3. Pembuatan Model Machine Learning
+
 - Membagi data menjadi data pelatihan dan data pengujian untuk memastikan evaluasi yang objektif.
 
 - Membangun beberapa model prediktif dengan target variabel attrition, dan menyetel hyperparameter masing-masing model.
@@ -34,11 +37,13 @@ Untuk itu, perusahaan perlu segera mengidentifikasi pola-pola yang memicu attrit
 - Menggunakan pendekatan pembelajaran terawasi untuk mengidentifikasi pola-pola penting.
 
 4. Evaluasi Model
+
 - Mengukur performa model menggunakan data pengujian dengan metrik seperti akurasi, precision, recall, dan F1-score.
 
 - Membandingkan hasil dari beberapa model untuk memilih yang paling optimal.
 
 5. Deployment
+
 - Model terbaik yang dipilih untuk di-deploy adalah Random Forest karena performanya yang stabil dan kemampuannya menangani data non-linear.
 
 - Model ini akan diintegrasikan ke dalam sistem produksi sehingga dapat digunakan oleh pengguna untuk memprediksi kemungkinan karyawan keluar berdasarkan input data terbaru.
@@ -46,9 +51,11 @@ Untuk itu, perusahaan perlu segera mengidentifikasi pola-pola yang memicu attrit
 ### Persiapan
 
 Sumber data:
+
 ```
 https://www.ibm.com/communities/analytics/watson-analytics-blog/watson-analytics-use-case-for-hr-retaining-valuable-employees/
 ```
+
 Setup environment:
 
 ```
@@ -58,17 +65,22 @@ Tools yang telah digunakan:
 - Jupyter Notebook (untuk eksplorasi dan modelling)
 ```
 
-## Setup menggunakan Google colab 
+## Setup menggunakan Google colab
+
 ```
 !pip install -r requirements.txt
 ```
+
 ## Setup Environment - Anaconda
+
 ```
 conda create --name main-ds python=3.11.9
 conda activate main-ds
 pip install -r requirements.txt
 ```
+
 ## Setup dengan pipenv (alternatif)
+
 ```
 mkdir proyek_analisis_data
 cd proyek_analisis_data
@@ -79,15 +91,25 @@ pip install -r requirements.txt
 
 ## Business Dashboard
 
-Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
+Visualisasi dashboard dirancang menggunakan Google Looker Studio untuk menyajikan distribusi data serta hubungan antar variabel terhadap Attrition Rate. Dashboard ini dapat diakses melalui tautan berikut:
+
+[Link Business Dashboard](https://lookerstudio.google.com/reporting/73380f5a-a925-43f1-b872-9aa9e49fa236)
 
 ## Conclusion
 
-Jelaskan konklusi dari proyek yang dikerjakan.
+- Sebanyak 60% karyawan berjenis kelamin pria dan 42,1% wanita, dengan mayoritas berasal dari Generasi Milenial yang berada di rentang usia 31–40 tahun.
+- Tingkat perpindahan karyawan (Attrition Rate) tercatat sebesar 12,2% dari total 1.470 karyawan, dengan angka tertinggi berasal dari Departemen Research & Development.
+- Tingkat kepuasan kerja paling tinggi berada pada kategori menengah (Medium).
+- Beberapa faktor yang memengaruhi Attrition Rate antara lain adalah lembur (Overtime), kenaikan persentase gaji (Percentage Salary Increase), pengalaman kerja, dan tingkat jabatan (Job Level).
 
 ### Rekomendasi Action Items (Optional)
 
 Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
 
-- action item 1
-- action item 2
+- Perusahaan perlu memberi perhatian khusus pada faktor-faktor yang menyebabkan tingkat kepuasan kerja hanya berada pada kategori 'menengah'. Disarankan untuk melakukan survei atau wawancara guna mengumpulkan masukan dari karyawan serta mengidentifikasi kendala yang perlu diperbaiki.
+
+- Mengingat tingginya angka perpindahan karyawan pada kelompok usia 31–40 tahun, penting untuk menelusuri penyebab tren ini dan menerapkan strategi retensi, seperti menyediakan jalur pengembangan karier yang lebih jelas.
+
+- Karena terdapat hubungan antara lembur dan meningkatnya angka attrition, perusahaan sebaiknya mengevaluasi beban kerja agar tidak berlebihan, demi mencegah kelelahan dan menjaga keseimbangan kehidupan kerja yang sehat.
+
+- Perluasan kesempatan promosi serta peninjauan kembali struktur kompensasi, khususnya di Departemen Research & Development, menjadi langkah penting dalam meningkatkan retensi dan motivasi karyawan.
