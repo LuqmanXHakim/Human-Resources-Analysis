@@ -92,7 +92,7 @@ pip install -r requirements.txt
 ## Business Dashboard
 
 Visualisasi dashboard dirancang menggunakan Google Looker Studio untuk menyajikan distribusi data serta hubungan antar variabel terhadap Attrition Rate. Dashboard ini dapat diakses melalui tautan berikut:
-
+![luqmanxhakim-dashboard](https://github.com/LuqmanXHakim/Human-Resources-Analysis/blob/main/luqmanxhakim-dashboard.jpg)
 [Link Business Dashboard](https://lookerstudio.google.com/reporting/73380f5a-a925-43f1-b872-9aa9e49fa236)
 
 ## Conclusion
