@@ -98,7 +98,6 @@ Visualisasi dashboard dirancang menggunakan Google Looker Studio untuk menyajika
 ## Conclusion
 
 - Sebanyak 60% karyawan berjenis kelamin pria dan 42,1% wanita, dengan mayoritas berasal dari Generasi Milenial yang berada di rentang usia 31–40 tahun.
-- Tingkat perpindahan karyawan (Attrition Rate) tercatat sebesar 12,2% dari total 1.470 karyawan, dengan angka tertinggi berasal dari Departemen Research & Development.
 - Tingkat kepuasan kerja paling tinggi berada pada kategori menengah (Medium).
 - Beberapa faktor yang memengaruhi Attrition Rate antara lain adalah lembur (Overtime), kenaikan persentase gaji (Percentage Salary Increase), pengalaman kerja, dan tingkat jabatan (Job Level).
 
